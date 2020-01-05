@@ -1,11 +1,11 @@
 #include<stdio.h>
-#include<graphics.h>
+//#include<graphics.h>
 #include<conio.h>
 
 int main(){
 	//1.BLA for m<1
-	int x1,y1,x2,y2,dx,dy,p,gd=DETECT,gm;
-	initgraph(&gd,&gm,"C://TURBOC3//BGI");
+	int x1,y1,x2,y2,dx,dy,p,gd,gm;
+	//initgraph(&gd,&gm,"C://TURBOC3//BGI");
 	printf("Enter two coordinate\n");
 	scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
 	dx=x2-x1;
@@ -16,7 +16,7 @@ int main(){
 			printf("(Xk,Yk) Pk (Xk+1,Yk+1) Pk+1)\n");
 		p=2*dy-dx;
 		do{
-		putpixel(x1,y1,RED);
+//		putpixel(x1,y1,RED);
 		printf("%d,%d\t %d\t",x1,y1,p);
 		x1++;
 		if(p<0){
